@@ -1,0 +1,152 @@
+html, body { padding:0px; margin: 0px; }
+
+
+body {
+	font-family: nunito, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+
+#grid-container {
+		display: grid;
+		width: 100vw;
+		height: 100vh;
+		grid-template-areas: "education career"
+							 "interests bucket-list";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+.education {
+	grid-area: education;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background-color: #5796E0;
+}
+
+.career {
+	grid-area: career;
+	position: relative;
+		height: 100%;
+	width: 100%;
+	z-index: 1;
+	background-color: #F5A623;
+}
+
+.interests {
+	grid-area: interests;
+	position: relative;
+		height: 100%;
+	width: 100%;
+		z-index: 1;
+	background-color: #98DF4A;
+	line-height: 180%;
+}
+
+.bucket-list {
+	grid-area: bucket-list;
+	position: relative;
+		height: 100%;
+	width: 100%;
+		z-index: 1;
+	background-color: #E46776;
+		line-height: 180%;
+}
+
+#middle {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+}
+
+#picture {
+	z-index: 11;
+	position: relative;
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	vertical-align: middle;
+	top: 36%;
+}
+
+img {
+	position: relative;
+}
+
+#name {
+	position: relative;
+	margin: auto;
+	top: -90px;
+	height: 31px;
+	width: 140px;
+	background-color: white;
+	box-shadow: 0px 2px 1px 1px grey;
+}
+
+.page-title {
+
+}
+
+h1 {
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+h2 {
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-weight: normal;
+}
+
+p {
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+	color: white;
+}
+
+a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.icon {
+	position: relative;
+	display: flex;
+	margin: auto;
+	z-index: 15;
+}
+
+.inactive {
+	position: relative;
+	margin: auto;
+	top: -94px;
+	height: 31px;
+	width: 140px;
+	background-color: white;
+	box-shadow: 0px 2px 1px 1px grey;
+	font-size: 20px;
+	text-align: center;
+}
+
+.active {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	top: -90px;
+	height: 36px;
+	width: 145px;
+	background-color: white;
+	box-shadow: 0px 2px 1px 1px grey;
+	font-size: 22px;
+}
+

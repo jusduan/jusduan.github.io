@@ -1,0 +1,123 @@
+html, body { padding:0px; margin: 0px; }
+
+
+body {
+	font-family: nunito, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+
+#grid-container {
+		display: grid;
+		width: 100vw;
+		height: 100vh;
+		grid-template-areas: "about projects"
+							 "resume linkedin";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+.about {
+	grid-area: about;
+	display: grid;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background-color: #F5A623;
+	align-items: center;
+}
+
+.projects {
+	grid-area: projects;
+	position: relative;
+		height: 100%;
+	width: 100%;
+	z-index: 1;
+	background-color: #98DF4A;
+}
+
+.resume {
+	grid-area: resume;
+	position: relative;
+		height: 100%;
+	width: 100%;
+		z-index: 1;
+	background-color: #E46776;
+	display: flex;
+	align-items: center;
+}
+
+.linkedin {
+	grid-area: linkedin;
+	position: relative;
+		height: 100%;
+	width: 100%;
+		z-index: 1;
+	background-color: #5796E0;
+}
+
+#middle {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+}
+
+#picture {
+	z-index: 11;
+	position: relative;
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	vertical-align: middle;
+	top: 36%;
+}
+
+img {
+	position: relative;
+}
+
+.inactive {
+	position: relative;
+	margin: auto;
+	top: -90px;
+	height: 31px;
+	width: 140px;
+	background-color: white;
+	box-shadow: 0px 2px 1px 1px grey;
+	font-size: 11px;
+}
+
+h1 {
+	text-align: center;
+	vertical-align: middle;
+}
+
+a {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	align-items: center;
+}
+
+.icon {
+	position: relative;
+	display: flex;
+	margin: auto;
+	z-index: 15;
+}
+
+.active {
+	position: relative;
+	margin: auto;
+	top: -90px;
+	height: 38px;
+	width: 150px;
+	background-color: white;
+	box-shadow: 0px 2px 1px 1px grey;
+	font-size: 13px;
+}
+
+

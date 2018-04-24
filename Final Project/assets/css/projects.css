@@ -1,0 +1,129 @@
+html, body { padding:0px; margin: 0px; }
+
+
+body {
+	font-family: nunito, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+
+#grid-container {
+		display: grid;
+		width: 100vw;
+		height: 100vh;
+		grid-template-areas: "chatbooster innod"
+							 "babble wefunder";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+.chatbooster {
+	grid-area: chatbooster;
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background-color: #44BEC7;
+}
+
+.innod {
+	grid-area: innod;
+	position: relative;
+		height: 100%;
+	width: 100%;
+	z-index: 1;
+		display: flex;
+	align-items: center;
+	background-color: #1E2E63;
+}
+
+.babble {
+	grid-area: babble;
+	position: relative;
+		height: 100%;
+	width: 100%;
+		z-index: 1;
+			display: flex;
+	align-items: center;
+	background-color: #2F2F2F;
+}
+
+.wefunder {
+	grid-area: wefunder;
+	position: relative;
+		height: 100%;
+	width: 100%;
+		z-index: 1;
+			display: flex;
+	align-items: center;
+	background-color: #0077C3;
+}
+
+#middle {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+}
+
+#picture {
+	z-index: 11;
+	position: relative;
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	vertical-align: middle;
+	top: 36%;
+}
+
+img {
+	position: relative;
+}
+
+.inactive {
+	position: relative;
+	margin: auto;
+	top: -85px;
+	height: 31px;
+	width: 140px;
+	background-color: white;
+	box-shadow: 0px 2px 1px 1px grey;
+	font-size: 11px;
+}
+
+h1 {
+	text-align: center;
+	vertical-align: middle;
+}
+
+a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.icon {
+	position: relative;
+	display: flex;
+	margin: auto;
+	z-index: 15;
+	top: ;
+}
+
+
+
+.active {
+	position: relative;
+	margin: auto;
+	top: -90px;
+	height: 38px;
+	width: 150px;
+	background-color: white;
+	box-shadow: 0px 2px 1px 1px grey;
+	font-size: 13px;
+}
+
+
